@@ -1,6 +1,5 @@
 import {
   Route,
-  BrowserRouter as Router,
   Routes
 } from "react-router-dom";
 import './App.css';
@@ -15,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Router>
         <Routes>
           <Route
             path="/about-us"
@@ -38,10 +36,8 @@ function App() {
             element={ <AboutUs /> }
           />
 
-        </Routes>
-      </Router>
+      </Routes>
     </div>
   )
 }
-
 export default App
