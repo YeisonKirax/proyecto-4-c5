@@ -25,7 +25,7 @@ export function ContactForm() {
   } )
   return (
     <form onSubmit={ handleSubmit }>
-      {/* <label htmlFor='name'>Nombre</label> */}
+      <label htmlFor='name'>Nombre</label>
       <input id='name' name='name' type="text" value={ values.name } onChange={ handleChange }></input>
 
       <label htmlFor='surname'>Apellido</label>

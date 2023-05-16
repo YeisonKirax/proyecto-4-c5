@@ -9,6 +9,8 @@ import { AboutUs } from './pages/AboutUs/AboutUs.jsx';
 import { ContactUs } from './pages/ContactUs/ContactUs.jsx';
 import { Menu } from './pages/Menu/Menu.jsx';
 import { Reservations } from './pages/Reservations/Reservations.jsx';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
