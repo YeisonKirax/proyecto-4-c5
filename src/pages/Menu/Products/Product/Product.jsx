@@ -1,15 +1,18 @@
 import { Card } from 'react-bootstrap';
 
+import "./product.css";
 export function Product( { name, description, price, img } ) {
   return (
-    <Card style={ { width: "18rem" } }>
+    <Card className='product-card' style={ { width: "18rem" } }>
       <Card.Img variant='top' src={ img }></Card.Img>
-      <Card.Body>
+      <Card.Body className='card-body-text'>
         <Card.Title>{ name }</Card.Title>
         <Card.Text>
-          <p>{ description }</p>
-          <p>{ price }</p>
+          { description }
         </Card.Text>
+      </Card.Body>
+      <Card.Body className='card-body-text'>
+        { price }
       </Card.Body>
     </Card>
   )
